@@ -58,7 +58,7 @@ This project is built with:
 - Update status: **Mark as Completed / Cancelled** (with confirmation dialogs)  
 
 
-###🎨 UI/UX Guidelines
+### 🎨 UI/UX Guidelines
 
 - Modern and clean Tailwind-based design
 - Mobile-first responsive layout
