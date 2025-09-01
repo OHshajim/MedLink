@@ -3,7 +3,7 @@
 A modern, responsive Doctor Appointment Management System built with **React/Next.js**, **TypeScript**, and **Tailwind CSS**.  
 MedLink connects patients and doctors in one seamless platform – enabling **registration, login, doctor directory, appointment booking, and schedule management**.  
 
-🚀 **Live Demo:** [Your Deployed URL](https://your-deployment-url.com)  
+🚀 **Live Demo:** [Your Deployed URL](https://med-link-seven.vercel.app/)  
 📦 **API Base URL:** [Appointment Manager API](https://appointment-manager-node.onrender.com/api/v1)  
 
 
