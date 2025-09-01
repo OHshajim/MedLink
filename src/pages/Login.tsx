@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation, replace } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -45,16 +45,16 @@ export const Login = () => {
       const { user, token } = res.data.data;
       
       login(user, token);
-      
-      const from = (location.state )?.from?.pathname || 
-                  (user.role === 'DOCTOR' ? '/doctor/dashboard' : '/patient/dashboard');
-      
-      navigate(from, { replace: true });
-      
       toast({
         title: 'Welcome back!',
         description: `Logged in successfully as ${user.role.toLowerCase()}.`,
       });
+      if(user.role === 'DOCTOR') {
+        navigate("/doctor/dashboard", { replace: true });
+      }
+      else {
+        navigate("/",{replace:true});
+      }
     } catch (error) {
       toast({
         title: 'Login failed',
