@@ -19,7 +19,7 @@ npm install
 
 # Step 4: Start the development server (auto-reloading & instant preview)
 npm run dev
-
+```
 
 ## What technologies are used for this project?
 
